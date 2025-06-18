@@ -3,49 +3,51 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Steampunk GameJam 2025</title>
+    <title>Videojocs Politèncnic Llevant</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="src/style.css"/>
+  <script type="module" crossorigin src="/assets/index-C8npKvx8.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-FALg5MXd.css">
 </head>
-<body class="bg-gradient-to-br from-[#0f0026] to-[#1a0033] min-h-screen flex items-center justify-center font-[Orbitron]">
-<div class="bg-[#1a0033] border-8 border-[#00fff7] rounded-2xl shadow-2xl p-10 max-w-xl w-full text-center my-12 relative">
-    <h1 class="text-5xl font-extrabold text-[#00fff7] mb-4 drop-shadow-[0_0_10px_#00fff7] tracking-widest">
-        GAMEJAM IFC43 2025
-    </h1>
-    <div class="mb-6">
-        <span class="text-xl text-[#fff] font-semibold">Tema:</span>
-        <span id="theme" class="text-2xl text-[#ff00ea] font-bold ml-2 drop-shadow-[0_0_8px_#ff00ea]">Your Theme</span>
+<body class="bg-gradient-to-br from-[#0f0026] to-[#1a0033] min-h-screen flex flex-col items-center justify-center font-[Orbitron]">
+<h1 class="text-6xl sm:text-7xl font-extrabold text-[#00fff7] mb-4 drop-shadow-[0_0_16px_#00fff7] tracking-widest text-center w-full max-w-5xl px-2 mx-auto mt-2">
+    GAMEJAM IFC43 2025
+</h1>
+<div class="bg-[#1a0033] border-4 border-[#00fff7] rounded-2xl shadow-2xl p-6 max-w-3xl w-full text-center my-3 relative">
+
+    <div class="mb-3">
+        <span class="text-2xl text-[#fff] font-semibold">Tema:</span>
+        <span id="theme"
+              class="text-3xl text-[#ff00ea] font-bold ml-2 drop-shadow-[0_0_8px_#ff00ea]">???</span>
     </div>
-    <div class="mb-2">
-        <span class="text-xl text-[#fff] font-semibold">Countdown:</span>
+    <div class="mb-1">
+        <span class="text-lg text-[#fff] font-semibold">Countdown publicació del tema:</span>
     </div>
 
     <div id="countdown" class="text-3xl text-[#00fff7] font-mono font-bold drop-shadow-[0_0_8px_#00fff7]"></div>
 
-    <div class="mt-10">
-        <h2 class="text-2xl font-bold text-[#ff00ea] mb-4 drop-shadow-[0_0_8px_#ff00ea]">Participants</h2>
-        <div id="contestants" class="grid grid-cols-2 sm:grid-cols-4 gap-6"></div>
+    <div class="mt-6">
+        <h2 class="text-2xl font-bold text-[#ff00ea] mb-2 drop-shadow-[0_0_8px_#ff00ea]">Participants</h2>
+        <div id="contestants" class="grid grid-cols-2 sm:grid-cols-5 gap-4"></div>
     </div>
 
     <!-- Winner Section -->
-    <div id="winner-section" class="mt-16 flex flex-col items-center relative">
+    <!--    <div id="winner-section" class="mt-16 flex flex-col items-center relative">-->
 
-        <div class="bg-[#18003a] border-4 border-[#ff00ea] rounded-2xl shadow-2xl p-8 flex flex-col items-center z-20 relative">
-            <img id="winner-photo" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Winner" class="w-40 h-40 rounded-full border-8 border-[#00fff7] mb-4 shadow-xl"/>
-            <h2 class="text-4xl font-extrabold text-[#ff00ea] mb-2 drop-shadow-[0_0_12px_#ff00ea]">Guanyador: Josep</h2>
-            <div class="flex flex-wrap gap-4 justify-center my-6">
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Game Screenshot 1" class="w-56 h-36 object-cover rounded-lg border-4 border-[#00fff7] shadow-lg"/>
-                <img src="https://picsum.photos/400/250?random=1" alt="Game Screenshot 2" class="w-56 h-36 object-cover rounded-lg border-4 border-[#ff00ea] shadow-lg"/>
-            </div>
-            <a href="https://yourgame.itch.io" target="_blank" class="mt-4 px-8 py-4 bg-[#00fff7] text-[#1a0033] text-2xl font-bold rounded-xl shadow-lg hover:bg-[#ff00ea] hover:text-white transition">
-                Download on itch.io
-            </a>
-        </div>
-        <canvas id="confetti-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-30"></canvas>
-    </div>
+    <!--        <div class="bg-[#18003a] border-4 border-[#ff00ea] rounded-2xl shadow-2xl p-8 flex flex-col items-center z-20 relative">-->
+    <!--            <img id="winner-photo" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Winner" class="w-40 h-40 rounded-full border-8 border-[#00fff7] mb-4 shadow-xl"/>-->
+    <!--            <h2 class="text-4xl font-extrabold text-[#ff00ea] mb-2 drop-shadow-[0_0_12px_#ff00ea]">Guanyador: Josep</h2>-->
+    <!--            <div class="flex flex-wrap gap-4 justify-center my-6">-->
+    <!--                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Game Screenshot 1" class="w-56 h-36 object-cover rounded-lg border-4 border-[#00fff7] shadow-lg"/>-->
+    <!--                <img src="https://picsum.photos/400/250?random=1" alt="Game Screenshot 2" class="w-56 h-36 object-cover rounded-lg border-4 border-[#ff00ea] shadow-lg"/>-->
+    <!--            </div>-->
+    <!--            <a href="https://yourgame.itch.io" target="_blank" class="mt-4 px-8 py-4 bg-[#00fff7] text-[#1a0033] text-2xl font-bold rounded-xl shadow-lg hover:bg-[#ff00ea] hover:text-white transition">-->
+    <!--                Download on itch.io-->
+    <!--            </a>-->
+    <!--        </div>-->
+    <!--        <canvas id="confetti-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-30"></canvas>-->
+    <!--    </div>-->
 
 
 </div>
-<script type="module" src="/src/main.js"></script>
 </body>
 </html>
